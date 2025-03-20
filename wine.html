@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Purchase Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body background="/static/images/img1.png">
+    <div class='container'>
+        <h2>Wine Purchase Prediction</h2>
+        <form action="/predict" method="post">
+            <label>Volatile acidity:</label>
+            <input type="number" step="any" name="volatile_acidity" required>
+            <label>Citric acid:</label>
+            <input type="number"  step="any" name="citric_acid" required>
+            <label>Residual sugar:</label>
+            <input type="number" step="any" name="residual_sugar" required>
+            <label>Chlorides:</label>
+            <input type="number" step="any" name="chlorides" required>
+            <label>Total sulfur dioxide:</label>
+            <input type="number"step="any" name="total_sulfur_dioxide" required>
+            <label>Density:</label>
+            <input type="number" step="any" name="density">
+            <label>pH:</label>
+            <input type="number"step="any" name="pH" required>
+            <label>Sulphates:</label>
+            <input type="number"step="any" name="sulphates" required>
+            <label>Alcohol:</label>
+            <input type="number"step="any" name="alcohol" required>
+
+            <button type="submit">Predict</button>
+        
+        </form>
+
+    </div>
+    
+
+    
+</body>
+</html>
